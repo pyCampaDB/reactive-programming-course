@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reactive List</title>
+</head>
+<body>
+    <h1>Thymeleaf + Spring WebFlux</h1>
+<table>
+    <tr th:each="product:${productsList}">
+        <td th:text="${product.number}"></td>
+        <td th:text="${product.concept}"></td>
+        <td th:text="${product.amount}"></td>
+    </tr>
+</table>
+</body>
+</html>
